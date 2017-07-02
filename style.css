@@ -1,0 +1,970 @@
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+/* HEADER PART */
+
+header {
+	height: 90px;
+	background-color: #2d2a36;
+	color: white;
+	text-transform: uppercase;
+	padding-right: 5vw;
+	overflow: auto;
+}
+header h1 {
+	float: left;
+	line-height: 90px;
+	font-size: 42px;
+	height: 90px;
+	margin: 0px;
+	text-align: center;
+	padding-left: 10vw;
+}
+header ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+header li {
+	list-style-type: none;
+	float: left;
+	width: 9vw;
+	height: 90px;
+	line-height: 90px;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+header li:hover{
+	color: #00ffeb;
+}
+
+/* WELCOME PART */
+
+.welcome {
+	background-image: url("https://static.pexels.com/photos/170/apple-laptop-notebook-notes-large.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: scroll;
+	height: 480px;
+	position: relative;
+}
+hgroup {
+	width: 500px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 32px;
+	margin-right: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 163px;
+	right: 0;
+}
+.p1 {
+	font-weight: 100;
+	margin: 0;
+	text-align: left;
+}
+.p2 {
+	font-weight: 700;
+	margin: 0;
+	text-align: left;
+}
+
+/* CONTENER 3 ICONS */
+
+.contener {
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+.contener h4 {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.contener p {
+	padding: 10px 0;
+	font-size: 14px;
+	width: 80%;
+	margin: 0 10% 0 10%;
+	text-align: center;
+}
+[class*="sec-"] {
+	width: 30vw;
+	float: left;
+	text-align: center;
+	display: block;	
+}
+.sec-1 {
+	margin-left: 4vw;
+}
+.sec-3 {
+	margin-right: 4vw;
+}
+.fa-search,
+.fa-laptop,
+.fa-cogs {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+ 	border-radius: 20px;
+}
+.fa-search:before,
+.fa-laptop:before,
+.fa-cogs:before {
+	font-size: 60px;
+	line-height: 100px;
+	color: white;
+}
+[class*="sec-"]:hover h4 {
+	color: #0aaefe;
+}
+[class*="sec-"]:hover .fa {
+	background-color: #0aaefe;
+}
+
+/* TEXT PART */
+
+.text {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	height: 110px;
+}
+.text h1 {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 32px;
+	margin: 10px;
+}
+.text p {
+	display: inline-block;
+	font-size: 14px;
+	width: 60%;
+	text-align: center;
+}
+
+/* GALLERY */
+
+.gallery {
+	height: 40vw;
+	width: 100%;		
+}
+.row {
+	width: 100%;
+}
+.box {
+	float: left;
+}
+.pic {
+	padding: 0;
+	margin: 0;
+	height: 20vw;
+	position: relative;
+}
+[class*="img-"] {
+	display: inline-block;
+	height: 20vw;
+	width: 100%;	
+	background-size: cover;
+	background-position: top;
+}
+.img-1 {
+	background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers-large.jpg");
+}
+.img-3 {
+	background-image: url("https://static.pexels.com/photos/5117/people-feet-train-travelling-large.jpeg");
+}
+.img-6 {
+	background-image: url("https://static.pexels.com/photos/5117/people-feet-train-travelling-large.jpeg");
+}
+.img-7 {
+	background-image: url("https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers-large.jpg");
+}
+.img-2 {
+	background-image: url("https://static.pexels.com/photos/5021/nature-sunset-person-woman-large.jpg");
+}
+.img-5 {
+	background-image: url("https://static.pexels.com/photos/170/apple-laptop-notebook-notes-large.jpg");
+}
+.img-4 {
+	background-image: url("https://static.pexels.com/photos/170/apple-laptop-notebook-notes-large.jpg");
+}
+.img-8 {
+	background-image: url("https://static.pexels.com/photos/5021/nature-sunset-person-woman-large.jpg");
+}
+.layer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+}
+.seli{
+	width: 66px;
+	height: 25px;
+	position: absolute;
+	top: calc(50% - 12px);
+	left: calc(50% - 33px);
+	opacity: 0;
+}
+.fa-search-plus,
+.fa-link {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	border-radius: 4px;
+	background-color: white;
+	float: left;
+	margin: auto 4px;
+}
+.fa-search-plus:before,
+.fa-link:before {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 25px;
+	width: 25px;
+	color: #36393B;
+	text-align: center;
+}
+.pic:hover .layer,
+.pic:hover .seli {
+	opacity: 1;
+}
+
+/* WORKERS */
+
+.workers {
+	width: 100%;
+	margin-top: 60px;
+}
+.person {
+	display: inline-block;
+	height: calc(20vw + 39px);
+	float: left;
+}
+.photo-1 {
+	background-image: url(#);
+}
+.photo-2 {
+	background-image: url(#);
+}
+.photo-3 {
+	background-image: url(#);
+}
+.photo-4 {
+	background-image: url(#);
+}
+[class*="photo-"] {
+	display: inline-block;
+	width: 18vw;
+	height: 18vw;
+	border-radius: 50%;
+	margin: 2vw 1vw 1vw 1vw;
+	background-color: lightgray;
+}
+.job {
+	width: 18vw;
+	line-height: 18vw;
+	padding: 0;
+	margin: 0;
+	color: lightgray;
+	text-align: center;
+}
+[class*="photo-"]:hover {
+	background-color: gray;
+}
+[class*="photo-"]:hover [class="job"] {
+	color: white;
+}
+.name {
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+}
+
+/* PROMOTION */
+
+.promotion {
+	margin-top: 60px;
+	height: 350px;
+	background-color: gray;
+}
+.margin,
+.mix,
+.all {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.all {
+	float: right;
+}
+.row1 {
+	height: 145px;
+	float: left;
+	width: 100%;
+}
+.row2 {
+	height: 205px;
+	float: left;
+	width: 100%;
+}
+.margin {
+	display: inline-block;
+	float: left;
+}
+div.mix {
+	background-image: url("https://static.pexels.com/photos/132204/pexels-photo-132204-large.jpeg");
+	background-size: cover;
+	display: inline-block;
+	float: left;
+	margin-top: 70px;
+	height: 80%;
+}
+.normal {
+	display: inline-block;
+	float: left;
+}
+.all h1{
+	text-transform: uppercase;
+	font-size: 32px;
+	line-height: 50px;
+	height: 50px;
+	padding-left: 3vw;
+	margin: 70px 0 25px 0;
+}
+.normal p {
+	height: 200px;
+	font-size: 14px;
+	padding: 0 0 0 3vw;
+	margin: 0;
+}
+.italic {
+	display: inline-block;
+	font-size: 14px;
+	float: left;
+}
+.italic p {
+	width: 60%;
+	padding: 0 0 0 40px;
+	margin: 0;
+}
+.promotion h1,
+.normal,
+.italic {
+	color: white;
+}
+
+/* NUMBERS */
+
+.numbers {
+	height: 180px;
+}
+.num {
+	height: 180px;
+	float: left;
+}
+.num h1 {
+	line-height: 54px;
+	font-size: 54px;
+	font-weight: 900;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+.num h5 {
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #0aaefe;
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+/* FOOTER */
+
+.about {
+	height: 250px;
+	color: white;
+	background-color: #36393B;
+	float: left;
+}
+.us h3 {
+	width: 110px;
+	margin: 0px;
+	display: inline-block;
+}
+.touch h3,
+.social h3 {
+	width: 145px;
+	margin: 0px;
+	display: inline-block;
+}
+.line {
+	display: inline-block;
+	height: 6px;
+	width: 60px;
+	margin: 0;
+	padding: 0;
+	border-top: 2px solid white;
+}
+.inf,
+.empty {
+	height: 215px;
+	float: left; 
+	margin-top: 35px;
+	padding-left: 10px;
+}
+.inf p {
+	font-size: 14px;
+}
+.us p {
+	width: 90%;
+}
+.touch p {
+	float: left;
+	padding-right: 5px;
+}
+.media {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background-color: #0aaefe;
+ 	text-align: center;
+ 	margin-right: 5px;
+}
+.media:before {
+	font-size: 15px;
+	line-height: 22px;
+	color: white;
+}
+.rights {
+	height: 50px;
+	background-color: #2a2d2e;
+	float: left;
+	width: 100%;
+}
+.rights p {
+	margin: 0;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	line-height: 50px;
+}
+
+/* HELP */
+
+@media screen and (max-width: 480px){
+/* For mobiles: */
+
+/* HEADER PART */
+header {
+	height: 461px;
+	padding: 0 5vw;
+}
+header ul {
+	float: left;
+}
+header li {
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+header h1 {
+	display: inline-block;
+	height: 90px;
+	line-height: 90px;
+	padding-left: 0;
+	font-size: 38px;
+	padding-top: 10px;
+	width: 100%;
+	border-bottom: 0.1px dotted white;
+}
+
+/* WELCOME PART */
+.welcome {
+	height: 350px;
+}
+hgroup {
+	width: 70vw;
+	top: 100px;
+}
+.p1,
+.p2 {
+	font-size: 26px;
+}
+
+/* CONTENER 3 ICONS */
+[class*="sec-"] {
+	width: 100%;
+	float: none;
+}
+.sec-1,
+.sec-3 {
+	margin-left: 0;
+}
+.contener p {
+	display: inline-block;
+	width: 80%;
+	text-align: center;
+}
+
+/* TEXT PART */
+.text {
+	height: 160px;
+}
+.text h1{
+	font-size: 28px;
+}
+.text p {
+	width: 80%;
+}
+
+/* GALLERY */
+.pic,
+[class*="img-"] {
+	height: 40vw;
+}
+.img-5 {
+	background-image: url("https://static.pexels.com/photos/5117/people-feet-train-travelling-large.jpeg");
+}
+.img-6 {
+	background-image: url("https://static.pexels.com/photos/170/apple-laptop-notebook-notes-large.jpg");
+}
+
+/* WORKERS */
+.person {
+	height: calc(46vw + 39px);
+}
+[class*="photo-"] {
+	width: 40vw;
+	height: 40vw;
+	margin: 5vw calc(50% - 20vw) 1vw calc(50% - 20vw);
+}
+.job {
+	width: 100%;
+	line-height: 40vw;
+}
+
+/* PROMOTION */
+.promotion {
+	margin-top: 30px;
+	height: 600px;
+}
+.margin {
+	height: 250px;
+}
+div.mix {
+	height: 200px;
+	margin-top: 50px;
+}
+.all {
+	height: 300px;
+	border-top: 1px solid white;
+}
+.all h1{
+	margin: 20px auto 20px auto;
+	font-size: 24px;
+	line-height: 30px;
+	height: 30px;
+	width: 95%;
+	padding: 0; 
+	text-align: center;
+}
+.row1 {
+	height: 70px;
+}
+.row2 {
+	height: 250px;
+}
+.normal p {
+	padding: 0 5vw;
+	height: 170px;
+	text-align: justify;
+}
+.italic p {
+	padding: 0 5vw;
+	width: 90%;
+}
+
+/* NUMBERS */
+.num {
+	height: 150px;
+}
+.numbers {
+	height: 600px;
+}
+.num h1 {
+	margin-top: 40px;
+}
+.num h5 {
+	margin-bottom: 30px;
+}
+
+/* FOOTER */
+.about {
+	float: none;
+	height: auto;
+}
+.top {
+	text-align: center;
+}
+.us {
+	padding: 0;
+}
+.us p,
+.socialmedia {
+	text-align: justify;
+	width: 80vw;
+	margin: 2vw auto 0 auto;
+}
+.inf {
+	height: auto;
+}
+.touch {
+	padding: 0;
+	text-align: center;
+}
+.touch p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 13px;
+}	
+.adress .street {
+	padding-right: 0px;
+}	
+.adress {
+	display: inline-block;
+	height: 120px;
+	margin: 2vw auto 0;
+}
+.social {
+	min-height: 105px;
+	padding: 0;
+	margin-bottom: 2vw;
+	margin-top: 30px;
+}
+.socialmedia {
+	text-align: center;
+}
+.empty {
+	display: none;
+}
+.line {
+	display: none;
+}
+
+.col-s-1 {width: 5%;}
+.col-s-2 {width: 10%;}
+.col-s-3 {width: 15%;}
+.col-s-4 {width: 20%;}
+.col-s-5 {width: 25%;}
+.col-s-6 {width: 30%;}
+.col-s-7 {width: 35%;}
+.col-s-8 {width: 40%;}
+.col-s-9 {width: 45%;}
+.col-s-10 {width: 50%;}
+.col-s-11 {width: 55%;}
+.col-s-12 {width: 60%;}
+.col-s-13 {width: 65%;}
+.col-s-14 {width: 70%;}
+.col-s-15 {width: 75%;}
+.col-s-16 {width: 80%;}
+.col-s-17 {width: 85%;}
+.col-s-18 {width: 90%;}
+.col-s-19 {width: 95%;}
+.col-s-20 {width: 100%;}	
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+/* For tablets: */
+
+/* HEADER PART */
+header {
+	height: 221px;
+	padding: 0 5vw;
+
+}
+header ul {
+	float: left;
+	width: 100%;
+}
+header li {
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+header h1 {
+	display: inline-block;
+	height: 90px;
+	line-height: 90px;
+	padding-left: 0;
+	padding-top: 10px;
+	width: 100%;
+	border-bottom: 0.1px dotted white;
+}
+
+/* WELCOME PART */
+.welcome {
+	height: 350px;
+}
+hgroup {
+	width: 70vw;
+	top: 100px;
+}
+
+/* CONTENER 3 ICONS */
+[class*="sec-"] {
+	width: 100%;
+	float: none;
+}
+.sec-1,
+.sec-3 {
+	margin-left: 0;
+}
+.contener p {
+	display: inline-block;
+	width: 60%;
+	text-align: center;
+}
+
+/* TEXT PART */
+.text {
+	height: 160px;
+}
+.text p {
+	width: 80%;
+}
+
+/* GALLERY */
+.pic,
+[class*="img-"] {
+	min-height: 20vw;
+	height: 25vw;
+}
+
+/* WORKERS */
+.workers {
+	margin-top: 0;
+}
+.person {
+	height: calc(40vw + 39px);
+}
+[class*="photo-"] {
+	width: 34vw;
+	height: 34vw;
+	margin: 5vw calc(50% - 17vw) 1vw calc(50% - 17vw);
+}
+.job {
+	width: 100%;
+	line-height: 34vw;
+}
+
+/* PROMOTION */
+.promotion {
+	margin-top: 30px;
+	height: 600px;
+}
+.margin {
+	height: 300px;
+}
+div.mix {
+	height: 230px;
+}
+.all {
+	height: 300px;
+	border-top: 1px solid white;
+}
+.all h1{
+	margin-top: 25px;
+	padding-left: 5vw;
+}
+.row1 {
+	height: 100px;
+}
+.row2 {
+	height: 200px;
+}
+.normal p {
+	padding-left: 5vw;
+}
+
+/* NUMBERS */
+.num {
+	height: 150px;
+}
+.numbers {
+	height: 300px;
+}
+.num h1 {
+	margin-top: 40px;
+}
+.num h5 {
+	margin-bottom: 30px;
+}
+
+/* FOOTER */
+.about {
+	float: none;
+	height: auto;
+}
+.top {
+	text-align: center;
+}
+.us {
+	padding: 0;
+}
+.us p,
+.socialmedia {
+	text-align: justify;
+	width: 80vw;
+	margin: 2vw auto 0 auto;
+}
+.inf {
+	height: auto;
+}
+.touch {
+	padding: 0;
+	text-align: center;
+}
+.touch p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 13px;
+}	
+.adress .street {
+	padding-right: 0px;
+}	
+.adress {
+	display: inline-block;
+	height: 120px;
+	margin: 2vw auto 0;
+}
+.social {
+	min-height: 105px;
+	padding: 0;
+	margin-bottom: 2vw;
+	margin-top: 30px;
+}
+.socialmedia {
+	text-align: center;
+}
+.empty {
+	display: none;
+}
+.line {
+	display: none;
+}
+
+.col-m-1 {width: 5%;}
+.col-m-2 {width: 10%;}
+.col-m-3 {width: 15%;}
+.col-m-4 {width: 20%;}
+.col-m-5 {width: 25%;}
+.col-m-6 {width: 30%;}
+.col-m-7 {width: 35%;}
+.col-m-8 {width: 40%;}
+.col-m-9 {width: 45%;}
+.col-m-10 {width: 50%;}
+.col-m-11 {width: 55%;}
+.col-m-12 {width: 60%;}
+.col-m-13 {width: 65%;}
+.col-m-14 {width: 70%;}
+.col-m-15 {width: 75%;}
+.col-m-16 {width: 80%;}
+.col-m-17 {width: 85%;}
+.col-m-18 {width: 90%;}
+.col-m-19 {width: 95%;}
+.col-m-20 {width: 100%;}
+}
+
+@media screen and (min-width: 767px){
+    /* For desktops: */
+.col-l-1 {width: 5%;}
+.col-l-2 {width: 10%;}
+.col-l-3 {width: 15%;}
+.col-l-4 {width: 20%;}
+.col-l-5 {width: 25%;}
+.col-l-6 {width: 30%;}
+.col-l-7 {width: 35%;}
+.col-l-8 {width: 40%;}
+.col-l-9 {width: 45%;}
+.col-l-10 {width: 50%;}
+.col-l-11 {width: 55%;}
+.col-l-12 {width: 60%;}
+.col-l-13 {width: 65%;}
+.col-l-14 {width: 70%;}
+.col-l-15 {width: 75%;}
+.col-l-16 {width: 80%;}
+.col-l-17 {width: 85%;}
+.col-l-18 {width: 90%;}
+.col-l-19 {width: 95%;}
+.col-l-20 {width: 100%;}
+}
+
+@media screen and (min-width: 767px) and (max-width: 950px) {
+
+/* HEADER PART */
+header {
+	height: 170px;
+	padding: 0 5vw;
+}
+header ul {
+	float: left;
+}
+header li {
+	width: 13vw;
+	height: 70px;
+	line-height: 70px;
+}
+header h1 {
+	padding-left: 0;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+/* CONTENER 3 ICONS */
+[class*="sec-"] {
+	width: 29vw;
+}
+
+/* NUMBERS */
+.numbers h1 {
+	font-size: 48px;
+}
+.numbers h5 {
+	font-size: 14px;
+}
+
+/* FOOTER */
+.about h3 {
+	font-size: 16px;
+}
+.about p {
+	font-size: 12px;
+}
+}
